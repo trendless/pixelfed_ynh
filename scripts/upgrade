@@ -57,6 +57,11 @@ ynh_setup_source --dest_dir="$install_dir" --keep=".env"
 
 chmod 600 "$install_dir/.env"
 
+if ynh_app_upgrading_from_version_before 0.14.4~ynh3 ; then
+	_update_app_locale
+	rm -rf $install_dir/resources/lang
+fi
+
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
 #=================================================

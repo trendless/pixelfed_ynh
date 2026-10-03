@@ -5,7 +5,7 @@ name = "Pixelfed"
 description.en = "Decentralized photo sharing social media platform"
 description.fr = "Plateforme de partage de photos décentralisée"
 
-version = "0.14.4~ynh2"
+version = "0.14.4~ynh3"
 
 maintainers = ["yalh76", "Lapineige"]
 
@@ -43,8 +43,8 @@ ram.runtime = "100M"
     ask.en = "Choose the application language"
     ask.fr = "Choisissez la langue de l'application"
     type = "select"
-    choices = ["de", "en", "es", "fr", "it", "nl", "pt"]
-    default = "fr"
+    choices = ["de-DE", "en-US", "es-ES", "fr-FR", "it-IT", "nl-NL", "pt-PL"]
+    default = "fr-FR"
 
 [resources]
         [resources.sources.main]
